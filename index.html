@@ -10,12 +10,18 @@
 
     <body>
         <div class="w3-top w3-bar w3-black">
-            <a href="#home" class="w3-bar-item w3-button">Home</a>
+            <a href="#L" class="w3-bar-item w3-button" onClick="playMyAudio()">Home</a>
         </div>
         <div class="w3-container w3-border w3-large">
             <h1 class="w3-left-align">NexaPeak Studios</h1>
             <p class="w3-left-align">Hello! This is a test, so ignore the awful styling, or lack thereof.</p>
-            <button class="w3-left-align">hehe a button click me</button>
+            <button class="w3-left-align" onClick="playMyAudio()">hehe a button click me</button>
+            <audio src="audio.mp3" id="myAudio"></audio>
+            <script>
+                function playMyAudio(){
+                  document.getElementById("myAudio").play();
+                }
+              </script>
             <br>
         </div>
     </body>
